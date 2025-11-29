@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Чат рабочий</title>
+  <style>
+    body { font-family:sans-serif; margin:20px; background:#f0f2f5; }
+    #chat { border:1px solid #ccc; padding:10px; height:300px; overflow:auto; margin-bottom:10px; background:#fff; border-radius:8px; }
+    .msg { display:flex; align-items:flex-start; margin:8px 0; }
+    .avatar { width:40px; height:40px; border-radius:50%; margin-right:8px; object-fit:cover; border:1px solid #aaa; }
+    .bubble { position:relative; padding:8px 12px; border-radius:12px; max-width:70%; word-wrap:break-word; background:#d0ebff; }
+    .nick { font-weight:bold; margin-right:6px; }
+    .time { display:block; font-size:11px; color:#555; text-align:right; margin-top:4px; }
+    .deleteBtn { position:absolute; top:-10px; right:-10px; background:#e63946; border:none; border-radius:50%; width:22px; height:22px; color:#fff; cursor:pointer; font-size:14px; line-height:22px; text-align:center; display:none; }
+    .bubble:hover .deleteBtn { display:block; }
+    .chatImage { max-width:200px; border-radius:8px; margin-top:5px; }
+    input, button { padding:6px; border:1px solid #ccc; border-radius:6px; margin:2px; cursor:pointer; }
+    #sendBtn { background:#666; color:#fff; }
+    #sendBtn:hover { background:#444; }
+    .color-btn { width:140px; height:30px; color:#fff; border:none; border-radius:6px; cursor:pointer; }
+    #avatarPreview { width:40px; height:40px; border-radius:50%; border:1px
